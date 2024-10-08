@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    background: white;
+    color: #1f2937;
+    border-radius: 10px;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.activeMenu{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 2px;
+    background: #1f2937;
+    padding: 10px 0px;
+}
+
+.activeMenu li{
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.activeMenu li:hover{
+    background: #fff;
+    color: #1f2937;
+}
+
+
+/* shopping Card */
+
+.shopCard::before{
+    content: attr(data-count);
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: crimson;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopCard.zero::before{
+    opacity: 1;
+}
+
+.basket{
+    background: #1f2937;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    width: 65vw;
+    overflow-y: auto;
+    transform: translateX(50%);
+    z-index: 100;
+    border-radius: 10px;
+    display: none;
+}
+
+.basket.display{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basket .item{
+    width: 100% !important;
+    color: #fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket .item img{
+    height: 200px;
+    object-fit: cover;
+}

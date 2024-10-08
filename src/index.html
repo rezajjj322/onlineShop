@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../fontAwesome/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-800 w-full h-full overscroll-x-auto px-2">
+    <div class="basket"></div>
+    <header class="w-full h-screen overflow-x-hidden relative">
+        <nav
+            class="bg-gray-800 h-14 flex justify-between items-center m-1 shadow-md shadow-gray-600 rounded-xl z-10 sticky">
+            <div class="logo">
+                <h2 class="text-white cursor-pointer">
+                    <i class="fa-solid fa-shop w-12 h-12 mx-2"></i>
+                </h2>
+            </div>
+            <div class="links">
+                <div class="burger"><i class="fa-solid fa-burger md:hidden text-white mx-3 w-9 h-9"></i></div>
+                <ul class="linksItem flex text-white font-thin">
+                    <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150">خانه</li>
+                    <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150"><a href="#about">درباره ما</a></li>
+                    <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150">تنظیمات</li>
+                    <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150">تماس با ما
+                    </li>
+                </ul>
+            </div>
+
+            <div class="shopCard relative text-white cursor-pointer">
+                <i class="fa-solid fa-cart-shopping w-10 h-10 mx-2"></i>
+            </div>
+        </nav>
+        <img src="../image/travel-still-life-pack-flat-lay.jpg" alt=""
+            class="w-full h-screen z-0 absolute top-0 object-cover">
+    </header>
+
+    <section class="w-full h-full rounded-lg shadow-md shadow-white my-10">
+        <div class="boxes flex flex-wrap justify-between items-center w-full h-full text-white px-5">
+            <div class="box flex items-center py-5"><i class="fa-solid fa-box-archive w-12 h-12"></i><span
+                    class="mx-1">24 ساعته , 7 روز هفته</span></div>
+            <div class="underline w-px h-20 bg-white"></div>
+            <div class="box flex items-center py-5"><i class="fa-solid fa-money-check-dollar w-12 h-12"></i><span
+                    class="mx-1">امکان پرداخت در محل</span></div>
+            <div class="underline w-px h-20 bg-white"></div>
+            <div class="box flex items-center py-5"><i class="fa-solid fa-box-open w-12 h-12"></i><span class="mx-1">هفت
+                    روز ضمانت بازگشت کالا</span></div>
+            <div class="underline w-px h-20 bg-white"></div>
+            <div class="box flex items-center py-5"><i class="fa-solid fa-money-check-dollar w-12 h-12"></i><span
+                    class="mx-1">امکان پرداخت در محل</span></div>
+            <div class="underline w-px h-20 bg-white"></div>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="products mt-20 w-full h-full flex justify-center items-center flex-wrap">
+        <div class="container w-full h-full flex flex-col justify-between items-center text-white">
+            <div>
+                <ul class="productMenu flex">
+                    <li data-filter="all" class="active font-bold mx-4 px-2 py-2 cursor-pointer">همه</li>
+                    <li data-filter="newest" class="font-bold mx-4 px-2 py-2 cursor-pointer">جدید ترین</li>
+                    <li data-filter="oldest" class="font-bold mx-4 px-2 py-2 cursor-pointer">قدیمی ترین</li>
+                </ul>
+            </div>
+            <div class="productContent flex justify-center items-center flex-wrap w-full m-3">
+                <div data-category="oldest"
+                    class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                    <img src="../image/high-angle-desk-arrangement-with-ssd-laptop.jpg" alt=""
+                        class="w-full h-64 rounded-md object-cover">
+                    <h1 class="nameItem p-3 text-center font-bold text-xl">پاور بانک 1</h1>
+                    <span class="px-3 text-green-600">قیمت : 2,900,000</span>
+                    <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ست </p>
+                    <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2">افزودن به سبد
+                        خرید</button>
+                </div>
+                <div data-category="newest"
+                    class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                    <img src="../image/high-angle-hands-connecting-ssd-laptop.jpg" alt=""
+                        class="w-full h-64 rounded-md object-cover">
+                    <h1 class="nameItem p-3 text-center font-bold text-xl">پاور بانک 2</h1>
+                    <span class="px-3 text-green-600">قیمت : 4,500,000</span>
+                    <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ست </p>
+                    <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2">افزودن به سبد
+                        خرید</button>
+                </div>
+                <div data-category="oldest"
+                    class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                    <img src="../image/modern-wireless-charger-tray-with-concrete-background.jpg" alt=""
+                        class="w-full h-64 rounded-md object-cover">
+                    <h1 class="nameItem p-3 text-center font-bold text-xl">پاور بانک 3</h1>
+                    <span class="px-3 text-green-600">قیمت : 1,600,000</span>
+                    <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ست </p>
+                    <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2">افزودن به سبد
+                        خرید</button>
+                </div>
+                <div data-category="oldest"
+                    class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                    <img src="../image/phone-mobile-connect-battery-power-bank.jpg" alt=""
+                        class="w-full h-64 rounded-md object-cover">
+                    <h1 class="nameItem p-3 text-center font-bold text-xl">پاور بانک 4</h1>
+                    <span class="px-3 text-green-600">قیمت : 2,900,000</span>
+                    <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ست </p>
+                    <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2">افزودن به سبد
+                        خرید</button>
+                </div>
+                <div data-category="newest"
+                    class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                    <img src="../image/power-bank-laptop.jpg" alt="" class="w-full h-64 rounded-md object-cover">
+                    <h1 class="nameItem p-3 text-center font-bold text-xl">پاور بانک 5</h1>
+                    <span class="px-3 text-green-600">قیمت : 1,200,000</span>
+                    <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ست </p>
+                    <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2">افزودن به سبد
+                        خرید</button>
+                </div>
+                <div data-category="newest"
+                    class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                    <img src="../image/high-angle-hands-connecting-ssd-laptop.jpg" alt=""
+                        class="w-full h-64 rounded-md object-cover">
+                    <h1 class="nameItem p-3 text-center font-bold text-xl">پاور بانک 6</h1>
+                    <span class="px-3 text-green-600">قیمت : 3,400,000</span>
+                    <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ست </p>
+                    <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2">افزودن به سبد
+                        خرید</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new Products -->
+
+    <section class="newProduct relative w-full h-full flex justify-center items-center my-10">
+        <div class="container flex flex-col justify-center items-center">
+            <span class="text-white text-3xl border-b-2 py-3 my-5">محصولات مرتبط</span>
+            <swiper-container class="mySwiper flex flex-wrap w-full text-white mt-8" slides-per-view="3"
+                centered-slides="true" space-between="30" pagination="true" pagination-type="fraction"
+                navigation="true">
+                <swiper-slide data-category="oldest" class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                        <img src="../image/headphne-1.jpg" alt="" class="w-full h-64 rounded-md object-cover">
+                        <h1 class="nameItem p-3 text-center font-bold text-xl">هدفون</h1>
+                        <span class="px-3 text-green-600">قیمت : 900,000</span>
+                        <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ست </p>
+                        <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2 cursor-pointer">افزودن به سبد خرید</button>
+                </swiper-slide>
+                <swiper-slide data-category="oldest" class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                        <img src="../image/headphone-2.jpg" alt="" class="w-full h-64 rounded-md object-cover">
+                        <h1 class="nameItem p-3 text-center font-bold text-xl">هدفون</h1>
+                        <span class="px-3 text-green-600">قیمت : 2,600,000</span>
+                        <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ست </p>
+                        <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2 cursor-pointer">افزودن به سبد خرید</button>
+                </swiper-slide>
+                <swiper-slide data-category="oldest" class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                        <img src="../image/headphne-1.jpg" alt="" class="w-full h-64 rounded-md object-cover">
+                        <h1 class="nameItem p-3 text-center font-bold text-xl">هدفون</h1>
+                        <span class="px-3 text-green-600">قیمت : 1,400,000</span>
+                        <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ست </p>
+                        <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2 cursor-pointer">افزودن به سبد خرید</button>
+                </swiper-slide>
+                <swiper-slide data-category="oldest" class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                        <img src="../image/headphone-2.jpg" alt="" class="w-full h-64 rounded-md object-cover">
+                        <h1 class="nameItem p-3 text-center font-bold text-xl">هدفون</h1>
+                        <span class="px-3 text-green-600">قیمت : 3,000,000</span>
+                        <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ست </p>
+                        <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2 cursor-pointer">افزودن به سبد خرید</button>
+                </swiper-slide>
+                <swiper-slide data-category="oldest" class="item ease-in duration-150 max-w-sm h-full shadow-lg shadow-gray-600 rounded-lg m-2">
+                        <img src="../image/headphne-1.jpg" alt="" class="w-full h-64 rounded-md object-cover">
+                        <h1 class="nameItem p-3 text-center font-bold text-xl">هدفون</h1>
+                        <span class="px-3 text-green-600">قیمت : 1,000,000</span>
+                        <p class="descrition p-3 text-justify my-3 border-b">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ست </p>
+                        <button class="addToCard w-full bg-white text-gray-600 font-bold rounded py-2 cursor-pointer">افزودن به سبد خرید</button>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+
+
+    <!-- About We -->
+
+    <section id="about" class="flex justify-center items-center w-full h-full">
+        <div class="container flex flex-col justify-center items-center w-full h-full my-10">
+            <span class="text-white text-3xl border-b-2 py-3 my-5">درباره ما</span>
+            <div class="about flex justify-center items-center">
+                <div class="img-about w-3/6">
+                    <img src="../image/business.jpg" alt="" class="rounded-lg">
+                </div>
+                <div class="content-about w-3/6 text-justify text-white p-4">
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد گیرد.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section id="footer" class="border-t-2 mt-10 w-full h-full flex flex-col justify-center items-center">
+
+        <div class="container w-full h-full my-5">
+            <div class="footer-menu flex justify-between items-center text-white">
+                <ul>
+                    <li class="font-bold my-3">خدمات مشتریان</li>
+                    <li>سوالات متداول</li>
+                    <li>رویه های بازگرداندن کالا</li>
+                    <li>شرایط استفاده</li>
+                    <li>حریم خصوصی</li>
+                    <li>گزارش باگ</li>
+                </ul>
+                <ul>
+                    <li class="font-bold my-3">راهنمای خرید</li>
+                    <li>ثبت سفارش</li>
+                    <li>ارسال سفارش</li>
+                    <li>شیوه های پرداخت</li>
+                </ul>
+                <div class="socialLinK flex flex-col justify-center items-center">
+                    <span class="text-white text-xl py-3 my-5">تماس با ما</span>
+                    <ul class="flex text-white">
+                        <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150">
+                            <i class="fa-brands fa-instagram w-5 h-5"></i>
+                        </li>
+                        <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150">
+                            <i class="fa-brands fa-twitter w-5 h-5"></i>
+                        </li>
+                        <li class="list-none mx-3 cursor-pointer hover:text-gray-400 ease-in-out duration-150">
+                            <i class="fa-brands fa-facebook w-5 h-5"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="w-full h-full rounded-lg shadow-md shadow-white my-10">
+            <div class="boxes flex flex-wrap justify-between items-center w-full h-full text-white px-5">
+                <div class="box flex items-center py-5"><i class="fa-solid fa-box-archive w-12 h-12"></i><span
+                        class="mx-1">24 ساعته , 7 روز هفته</span></div>
+                <div class="underline w-px h-20 bg-white"></div>
+                <div class="box flex items-center py-5"><i class="fa-solid fa-money-check-dollar w-12 h-12"></i><span
+                        class="mx-1">امکان پرداخت در محل</span></div>
+                <div class="underline w-px h-20 bg-white"></div>
+                <div class="box flex items-center py-5"><i class="fa-solid fa-box-open w-12 h-12"></i><span class="mx-1">هفت
+                        روز ضمانت بازگشت کالا</span></div>
+                <div class="underline w-px h-20 bg-white"></div>
+                <div class="box flex items-center py-5"><i class="fa-solid fa-money-check-dollar w-12 h-12"></i><span
+                        class="mx-1">امکان پرداخت در محل</span></div>
+                <div class="underline w-px h-20 bg-white"></div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="../fontAwesome/all.min.js"></script>
+</body>
+
+</html>
